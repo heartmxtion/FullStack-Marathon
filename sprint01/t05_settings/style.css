@@ -1,0 +1,347 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+header {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  text-align:center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  
+}
+
+.menu-toggle img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+
+.menu a {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  color: #444;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #f2f2f2;
+}
+
+.menu a img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.body-without-header{
+	display: flex;
+}
+
+/* Main styles */
+main {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  margin-left: auto;
+  margin-top: 1rem;
+ 
+}
+
+.font-size-range{
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-main{
+	flex: 1;
+	position: relative;
+	flex-grow: 1;
+}
+.form-head{
+	flex: 2;
+	background-color: #D3D3D3;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	overflow: hidden;
+	margin-top: auto;
+	margin-bottom: auto;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	min-width: 50px; /* здесь задайте нужную вам минимальную ширину */
+	flex-grow: 0;
+	margin-right: auto;
+}
+
+label {
+  margin-top: 0.5rem;
+}
+
+select, input[type="range"] {
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  font-size: 1rem;
+}
+
+
+
+
+input[type="checkbox"] {
+  margin-left: 0.5rem;
+}
+
+.weight{
+	display: flex;
+}
+
+
+fieldset {
+  border: none;
+  margin-top: 1rem;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.color.red {
+  background-color: #ff4d4d;
+  width: 2rem;
+  height: 2rem;
+}
+
+.color.blue {
+  background-color: #4d79ff;
+  width: 2rem;
+  height: 2rem;
+}
+
+.color.green {
+  background-color: #66ff66;
+  width: 2rem;
+  height: 2rem;
+}
+
+.color.yellow {
+  background-color: #ffff66;
+  width: 2rem;
+  height: 2rem;
+}
+
+
+.slider {
+position: relative;
+display: inline-block;
+width: 50px;
+height: 28px;
+margin-left: 10px;
+}
+
+
+/* Стили для переключателя */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 10px;
+}
+
+/* Стили для чекбокса */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Стили для ползунка-фона */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  background-color: white;
+  border: 1px solid gray;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+/* Стили для чекбокса, когда он отмечен */
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+/* Стили для круглого ползунка */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+label .color {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #ccc;
+	border-radius: 50%;
+	margin-right: 6px;
+}
+
+.selcolor {
+	display: flex;
+}
+
+.selcolor label input[type="checkbox"] {
+	display: none;
+}
+
+label input[type="checkbox"]:checked + .color {
+	border-color: #2196F3;
+}
+
+fieldset {
+	margin-bottom: 24px;
+}
+
+legend {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+label {
+	display: block;
+	margin-bottom: 12px;
+	font-size: 14px;
+}
+
+input[type="range"] {
+	margin-bottom: 12px;
+}
+
+
+
+button.menu-toggle {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 0;
+	margin-right: 16px;
+}
+
+button.menu-toggle img {
+	width: 24px;
+	height: 24px;
+}
+
+nav.menu {
+	display: none;
+	position: absolute;
+	top: 56px;
+	right: 0;
+	padding: 16px;
+	background-color: #fff;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	z-index: 1;
+}
+
+nav.menu a {
+	display: flex;
+	align-items: center;
+	color: #333;
+	font-size: 14px;
+	margin-bottom: 12px;
+	text-decoration: none;
+}
+
+nav.menu a:hover {
+	color: #2196F3;
+}
+
+nav.menu img {
+	width: 24px;
+	height: 24px;
+	margin-right: 6px;
+}
+
+@media screen and (min-width: 768px) {
+	.menu-toggle {
+		display: none;
+	}
+	nav.menu {
+		display: flex;
+		position: static;
+		padding: 0;
+		background-color: transparent;
+		box-shadow: none;
+		border: none;
+	}
+	nav.menu a {
+		margin-bottom: 0;
+
+	}
+}

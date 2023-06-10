@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Handbook on HTML, CSS, and Web Protocols</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="header">
+		<h1>Handbook on HTML, CSS, and Web Protocols</h1>
+	</header>
+	<section class="contents">
+		<h2>Contents</h2>
+		<ul>
+			<li><a href="#html">HTML</a></li>
+			<li><a href="#css">CSS</a></li>
+			<li><a href="#protocols">Protocols</a></li>
+		</ul>
+	</section>
+	<h4 id="html">HTML</h4>
+	<section class="html grid-container">
+		<div class="grid-item">
+			<h2>Introduction to HTML</h2>
+			<p>HTML is the standard markup language used to create web pages. It stands for Hypertext Markup Language.</p>
+			<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;My Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Welcome to my Web Page&lt;/h1&gt;
+	&lt;p&gt;This is my first paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+		</div>
+		<div class="grid-item">
+			<h2>HTML Elements</h2>
+			<p>HTML elements are the building blocks of HTML pages. An HTML element is defined by a start tag, some content, and an end tag.</p>
+			<code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+			<p></p>
+			<code>&lt;a href="https://www.example.com"&gt;This is a link&lt;/a&gt;</code>
+			<p></p>
+			<code>&lt;img src="image.jpg" alt="This is an image"&gt;</code>
+		</div>
+		<div class="grid-item">
+			<h2>HTML Forms</h2>
+			<p>HTML forms are used to collect data from users. The most common form element is the input element.</p>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name">
+				<p></p>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email">
+				<p></p>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+		<div class="grid-item">
+			<h2>HTML Tables</h2>
+			<p>HTML tables are used to display tabular data. The table element is used to create a table, and the tr element is used to create a row.</p>
+			<table>
+				<tr>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Gender</th>
+				</tr>
+				<tr>
+					<td>John</td>
+					<td>25</td>
+					<td>Male</td>
+				</tr>
+				<tr>
+					<td>Jane</td>
+					<td>30</td>
+					<td>Female</td>
+				</tr>
+			</table>
+		</div>
+	</section>
+	<h4 id="css">CSS</h4>
+	<section class="css grid-container">
+		<div class="grid-item">
+			<h2>Introduction to CSS</h2>
+			<p>CSS is the language used to style HTML pages. It stands for Cascading Style Sheets.</p>
+			<code>body {
+			background-color: #f5f5f5;
+			font-family: Arial, sans-serif;
+			}</code>
+		</div>
+		<div class="grid-item">
+			<h2>CSS Selectors</h2>
+			<p>CSS selectors are used to select HTML elements based on their attributes, such as class, id, or tag name.</p>
+			<code>.button {
+			background-color: #007bff;
+			color: #fff;
+			padding: 10px;
+			border-radius: 5px;
+			}</code>
+			<code>#header {
+			background-color: #fff;
+			color: #000;
+			}</code>
+			<code>h1 {
+			font-size: 2.5rem;
+			}</code>
+			<code>img {
+			max-width: 100%;
+			height: auto;
+			}</code>
+		</div>
+		<div class="grid-item">
+			<h2>CSS Box Model</h2>
+			<p>The CSS box model is used to describe the layout and sizing of HTML elements. Each element has a content area, padding, border, and margin.</p>
+			<code>.box {
+			width: 200px;
+			height: 200px;
+			padding: 20px;
+			border: 1px solid #000;
+			margin: 10px;
+			}</code>
+			<img src="https://via.placeholder.com/200" alt="A placeholder image" class="box">
+		</div>
+		<div class="grid-item">
+			<h2>CSS Flexbox</h2>
+			<p>CSS flexbox is a layout model used to create flexible and responsive layouts. Flexbox is designed to work with one-dimensional layouts such as rows or columns.</p>
+			<code>.container {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			}</code>
+			<code>.item {
+			flex: 1;
+			text-align: center;
+			}</code>
+			<div class="container">
+				<div class="item">
+					<h3>Item 1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="item">
+					<h3>Item 2</h3>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+				</div>
+				<div class="item">
+					<h3>Item 3</h3>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<h4 id= "protocols">Web protocols</h4>
+	<section class="protocols grid-container">
+		<div class="grid-item">
+			<h2>Introduction to Web Protocols</h2>
+			<p>Web protocols are used to enable communication between web servers and clients. The most common web protocols are HTTP, HTTPS, DNS, and IP.</p>
+		</div>
+		<div class="grid-item">
+			<h2>HTTP and HTTPS</h2>
+			<p>HTTP is a protocol used for transmitting data over the web. HTTPS is a secure version of HTTP that uses encryption to protect data.</p>
+			<p>HTTP Methods:</p>
+			<ul>
+				<li>GET - retrieves information from the server</li>
+				<li>POST - sends data to the server to create or update a resource</li>
+				<li>PUT - sends data to the server to update an existing resource</li>
+				<li>DELETE - sends a request to the server to delete a resource</li>
+			</ul>
+			<p>HTTP Response Status Codes:</p>
+			<ul>
+				<li>1xx - informational</li>
+				<li>2xx - successful</li>
+				<li>3xx - redirection</li>
+				<li>4xx - client errors</li>
+				<li>5xx - server errors</li>
+			</ul>
+		</div>
+		<div class="grid-item">
+		<h2>DNS</h2>
+		<p>DNS is a protocol used for translating domain names into IP addresses. DNS records include:</p>
+		<ul>
+			<li>A - maps a domain name to an IPv4 address</li>
+			<li>AAAA - maps a domain name to an IPv6 address</li>
+			<li>CNAME - maps a domain name to another domain name</li>
+			<li>MX - maps a domain name to a mail exchange server</li>
+			<li>TXT - contains text information about a domain name</li>
+		</ul>
+		</div>
+			<div class="grid-item">
+				<h2>IP Addresses</h2>
+				<p>IP addresses are unique identifiers assigned to devices connected to a network. There are two versions of IP addresses: IPv4 and IPv6. IPv4 addresses are 32-bit numbers, while IPv6 addresses are 128-bit numbers.</p>
+				<p>To determine the IP address of a domain name, you can use the <code>nslookup</code> command in the terminal. For example:</p>
+				<code>nslookup google.com</code>
+				<p></p>
+				<p>This will return the IP address of the Google domain.</p>
+			</div>
+	</section>
+	<footer>
+		<p>&copy; 2023 heartmxtion</p>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+}
+
+/* Стилизация сообщения */
+#message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #f00;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Стилизация контейнера изображений */
+#imageContainer {
+  margin-top: 20px;
+  text-align: center; /* Выравнивание по центру */
+}
+
+/* Стилизация изображений */
+#imageContainer img {
+  margin-bottom: 10px;
+  display: block; /* Размещение изображений в столбик */
+  margin-left: auto; /* Центрирование по горизонтали */
+  margin-right: auto; /* Центрирование по горизонтали */
+}

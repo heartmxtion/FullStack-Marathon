@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+}
+
+.film-container {
+  display: flex;
+  background-color: #D4D4D4;
+  height: 600px;
+  width: 1200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.film-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.film-list ul {
+  list-style-type: none;
+  padding: 0;
+  border-right: 2px solid white;
+  height: 95%;
+  width: 250px;
+}
+
+.film-list li {
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 20px;
+}
+
+.film-list li:hover {
+  border-left: 2px solid #4E7EFF;
+}
+
+.film-list li.selected:hover {
+  border-left: 3px solid #1A6BF7;
+}
+
+
+.selected {
+  border-left: 3px solid #1A6BF7;
+}
+
+
+#film-details {
+  padding: 20px;
+}
+
+#film-title {
+  margin-top: 0;
+}
+
+#film-poster {
+  max-width: 400px;
+  max-height: 450px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 0 5px 5px 0;
+}
+
+#film-actors {
+  width: 590px;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+#film-actors span {
+  display: inline-block;
+  background-color: #517CF2;
+  padding: 10px;
+  margin-right: 5px;
+  color: white;
+  border-radius: 3px;
+  width: 75px;
+  height: 50px;
+  white-space: normal;
+  vertical-align: middle;
+}
+
+
+

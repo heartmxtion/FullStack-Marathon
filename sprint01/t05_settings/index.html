@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+	<title>Application Settings</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Settings</h1>
+	</header>
+	<div class = "body-without-header">
+	<main>
+		<form>
+			<div class = "form-main">
+			<label for="typeface">Typeface:</label>
+			<select name="typeface" id="typeface">
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Helvetica, sans-serif">Helvetica</option>
+				<option value="Georgia, serif">Georgia</option>
+				<option value="Times New Roman, serif">Times New Roman</option>
+				<option value="Verdana, sans-serif">Verdana</option>
+			</select>
+			<div class="right-part">
+			<label for="darkModeSwitch">Dark UI:</label>
+			<label class="switch" for="darkModeSwitch">
+				<input type="checkbox" id="darkModeSwitch" name="darkModeSwitch">
+				<span class="slider round"></span>
+			</label>
+
+			<fieldset>
+				<label>Pick a color:</label>
+				<div class = "selcolor">
+				<label>
+					<input type="checkbox" name="color" value="red">
+					<span class="color red"></span>
+				</label>
+				<label>
+					<input type="checkbox" name="color" value="blue">
+					<span class="color blue"></span>
+				</label>
+				<label>
+					<input type="checkbox" name="color" value="green">
+					<span class="color green"></span>
+				</label>
+				<label>
+					<input type="checkbox" name="color" value="yellow">
+					<span class="color yellow"></span>
+				</label>
+				</div>
+			</fieldset>
+			</div>
+			<label>Weight:</label>
+			<div class = "weight">
+			<label>
+				<input type="checkbox" name="font-weight" value="normal">
+				Regular
+			</label>
+			<label>
+				<input type="checkbox" name="font-weight" value="bold">
+				Bold
+			</label>
+			</div>
+
+			<label for="font-size">Size:</label>
+			<input type="range" name="font-size" id="font-size" min="10" max="24" value="14">
+			<div class = "font-size-range">
+				<p>a</p>
+				<p>A</p>
+			</div>
+			</div>
+		</form>
+		
+	</main>
+					<div class = "form-head">
+			<nav class="menu">
+				<a href="#" class="active">
+					<img src="assets/images/artistic-brush.png" alt="Text">
+				</a>
+				<a href="#">
+					<img src="assets/images/user-icon.png" alt="User">
+				</a>
+				<a href="#">
+					<img src="assets/images/sms-speech-bubble.png" alt="Messages">
+				</a>
+				<a href="#">
+					<img src="assets/images/computer-screen.png" alt="Screen">
+				</a>
+			</nav>
+			</div>
+			</div>
+</body>
+</html>

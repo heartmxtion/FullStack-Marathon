@@ -1,0 +1,15 @@
+h1 {
+  font-size: 128px;
+  background-color: red;
+  display: inline-block;
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+h1 span {
+  color: white;
+  position: relative;
+  bottom: -35px;
+}

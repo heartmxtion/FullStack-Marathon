@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.draggable {
+  cursor: move;
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+#block1 {
+    background-color: #FF0000;
+}
+
+#block2 {
+    background-color: #00FF00;
+}
+
+#block3 {
+    background-color: #0000FF;
+}
+
+#block4 {
+    background-color: #FFFF00;
+}
+
+#block5 {
+    background-color: #FF00FF;
+}
+
+#block6 {
+    background-color: #00FFFF;
+}

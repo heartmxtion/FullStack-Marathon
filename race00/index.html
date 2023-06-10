@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+	<meta charset="utf-8">
+    <title>Simple Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="description" content="race00. Simple calculator.">
+</head>
+<body>
+    <div id="calculator" class="calculator">
+		<div id= "calculatorHeadMenu" class= "calculatorHeadMenu">
+			<div class= "calculatorHeadMenuBurger" onclick="showMusicMenu()">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div id="numeralChoose" class="numeralChoose">
+				<ul class="numeralChoose-list">
+					<li class="numeralChoose-list-item" onclick="decimalSystem()">Dec</li>
+					<li class="numeralChoose-list-item" onclick="hexadecimalSystem()">Hex</li>
+					<li class="numeralChoose-list-item" onclick="binarySystem()">Bin</li>
+				</ul>
+			</div>
+			<div id= "powerBtn" class= "powerBtn">
+				<img src="https://cdn.discordapp.com/attachments/695034009666846723/1113420826109292555/power-btn.png" alt="power-btn">
+			</div>
+		</div>
+		<div id="screen" class="screen">
+			<div id="floater" class="floater">
+				<p id="equation" class="equation"></p>
+				<p id="result" class="result"></p>
+			</div>
+        </div>
+		<div class= "topMenuContainer">
+			<input type="button" value="Hist" onclick="showHistory()">
+			<input type="button" value="Con" onclick="showConvert()">
+			<input type="button" value="Func" onclick="showFunctions()">
+			<input type="button" value="Del" onclick="removeLastCharacter()">
+		</div>
+		<div id="calculatorPlaylist" class="calculatorPlaylist">
+			<iframe id="spotifyFrame" class="spotifyFrame" src="https://open.spotify.com/embed/playlist/1nVWPImtwYUYdvCTPHTtpJ?utm_source=generator&theme=0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			<button id="hideButton" onclick="showMusicMenu()">Hide</button>
+		</div>
+		<div id="historyMenu" class="historyMenu">
+			<h2>Calculator History</h2>
+			<ul id="historyList" class="historyList"></ul>
+			<input type="button" value="Clear History" onclick="clearHistory()">
+		</div>
+		<div id="convertMenu" class="convertMenu">
+			<div id="convertationChooseWithHeader" class="convertationChooseWithHeader">
+				<div id="convertationHeader" class="convertationHeader">
+					<h2>Convertations</h2>
+				</div>
+				<div id="convertationChoose" class="convertationChoose">
+					<ul class="convertationChoose-list">
+						<li class="convertationChoose-list-item" onclick="convertLengths()">Lenght</li>
+						<li class="convertationChoose-list-item" onclick="convertWeights()">Weight</li>
+						<li class="convertationChoose-list-item" onclick="convertAreas()">Area</li>
+					</ul>
+				</div>
+			</div>
+			<div id="convertFields" class="convertFields">
+				<div id="convertByLength" class="convertByLength">
+					<div class="convertByLength-items">
+						<div class="converter-item">
+							<div class="converter-text">Cm</div>
+							<input type="number" value="0" class="converter-input">
+						</div>
+						<div class="converter-item">
+							<div class="converter-text">Km</div>
+							<input type="number" value="0" class="converter-input">
+						</div>
+						<div class="converter-item">
+							<div class="converter-text">M</div>
+							<input type="number" value="0" class="converter-input">
+						</div>
+					</div>
+				</div>
+				<div id="convertByWeight" class="convertByWeight">
+					<div class="convertByWeight-items">
+						<div class="converter-item">
+							<div class="converter-text">Grams</div>
+							<input type="number" value="0" class="converter-input">
+						</div>
+						<div class="converter-item">
+							<div class="converter-text">Kilograms</div>
+							<input type="number" value="0" class="converter-input">
+						</div>
+						<div class="converter-item">
+							<div class="converter-text">Tonnes</div>
+							<input type="number" value="0" class="converter-input">
+						</div>
+					</div>
+				</div>
+				<div id="convertByArea" class="convertByArea">
+					<div class="convertByArea-items">
+						<div class="converter-item">
+							<div class="converter-text">Cm²</div>
+								<input type="number" value="0" class="converter-input">
+						</div>
+						<div class="converter-item">
+							<div class="converter-text">Km²</div>
+							<input type="number" value="0" class="converter-input">
+						</div>
+						<div class="converter-item">
+							<div class="converter-text">M²</div>
+							<input type="number" value="0" class="converter-input">
+						</div>
+					</div>
+				</div>
+			</div>
+			<input type="button" value="Back" onclick="backToCalculator()">
+	    </div>
+		<div class="buttonsContainer">
+			<input type="button" value="Clear" onclick="clearCalculator()">
+			<input type="button" value="(" onclick="append('(')">
+			<input type="button" value=")" onclick="append(')')">
+			<input type="button" value="/" onclick="append('/')">
+			<input type="button" value="7" onclick="append('7')">
+			<input type="button" value="8" onclick="append('8')">
+			<input type="button" value="9" onclick="append('9')">
+			<input type="button" value="*" onclick="append('*')">
+			<input type="button" value="4" onclick="append('4')">
+			<input type="button" value="5" onclick="append('5')">
+			<input type="button" value="6" onclick="append('6')">
+			<input type="button" value="-" onclick="append('-')">
+			<input type="button" value="1" onclick="append('1')">
+			<input type="button" value="2" onclick="append('2')">
+			<input type="button" value="3" onclick="append('3')">
+			<input type="button" value="+" onclick="append('+')">
+			<input type="button" value="+/-" onclick="toggleSign()">
+			<input type="button" value="0" onclick="append('0')">
+			<input type="button" value="." onclick="append('.')">
+			<input type="button" value="=" onclick="calculate()">
+		</div>
+		<div id="funcMenu" class="funcMenu">
+			<h2>Functions</h2>
+			<div id="funcMenuBTNs" class="funcMenuBTNs">
+				<input type="button" value="x!" onclick="append('!')">
+				<input type="button" value="x²" onclick="square()">
+				<input type="button" value="xⁿ" onclick="append('^')">
+				<input type="button" value="√x" onclick="append('√')">
+				<input type="button" value="⅟x" onclick="inverse()">
+				<input type="button" value="MR" onclick="memoryAction('mr')">
+				<input type="button" value="MC" onclick="memoryAction('mc')">
+				<input type="button" value="M+" onclick="memoryAction('m+')">
+				<input type="button" value="M-" onclick="memoryAction('m-')">
+				<input type="button" value="MS" onclick="memoryAction('ms')">
+			</div>
+		</div>
+		<div id= "letterMenu" class="letterMenu">
+			<h2>Aditional letters</h2>
+			<div id= "buttonsContainerLetters" class="buttonsContainerLetters">
+				<input type="button" value="A" onclick="append('a')">
+				<input type="button" value="B" onclick="append('b')">
+				<input type="button" value="C" onclick="append('c')">
+				<input type="button" value="D" onclick="append('d')">
+				<input type="button" value="E" onclick="append('e')">
+				<input type="button" value="F" onclick="append('f')">
+			</div>
+			</div>
+    </div>
+	<script src="js/script.js"></script>
+</body>
+</html>

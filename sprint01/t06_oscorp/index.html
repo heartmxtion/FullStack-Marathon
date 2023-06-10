@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="LUTIPON SHOP is your one-stop shop for fun. We have a wide range of crazy animals.">
+    <title>LUTIPON SHOP - Your One-Stop Shop for Fun</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+	  <div class="logo">
+        <a href="#"><img src="assets/images/logo.jpg" alt="Store Logo"></a>
+      </div>
+      <div class="title">
+        <h1><a href="#">LUTIPON SHOP</a></h1>
+      </div>
+	  <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="search">
+	    <label for="search-input">Search:</label>
+        <input type="text" id="search-input" placeholder="Type here...">
+        <button class="search-button-text">Go</button>
+      </div>
+      <div class="telephone">
+        <p>Phone: <a href="tel:+380953056222">+380953056222</a></p>
+      </div>
+    </header>
+    <nav>
+	  <ul class="breadcrumb-list">
+          <li><a href="#">Home</a></li>
+		  <li>/</li>
+		  <li>Products</li>
+      </ul>
+    </nav>
+	<div class = "content">
+    <aside class = "filters">
+	  <h2>Filters</h2>
+      <h3>Selected Filters:</h3>
+      <ul class="selected-filters-list">
+        <!-- Selected filters will be dynamically added if we use JavaScript -->
+      </ul>
+      <h3>Filter by Type:</h3>
+      <ul class="type-filter-list">
+        <li>
+          <label>
+            <input type="checkbox" name="type" value="cat">
+            Cat
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="type" value="hamster">
+            Hamster
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="type" value="mouse">
+            Mouse
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="type" value="piggy">
+            Piggy
+          </label>
+        </li>
+      </ul>
+      <h3>Filter by Price:</h3>
+      <div class="price-filter-slider">
+        <input type="range" name="price" min="0" max="100" step="1" value="50">
+		<div class="price-filter-slider-range">
+			<p class = "range-min-price">$9.99</p>
+			<p class = "range-max-price">$1000</p>
+		</div>
+      </div>
+    </aside>
+    <main>
+      <ul class="product-list">
+        <li class="product-item">
+          <div class = "product-content">
+            <img src="assets/images/cat.gif" alt="Dancing cat">
+            <h2 class="product-title">Dancing cat</h2>
+            <p class="product-price">$19.99</p>
+            <p class="product-availability">In stock</p>
+            <a href = "card.html" class="buy-button">Buy now</a>
+          </div>
+        </li>
+        <li class="product-item">
+		  <div class = "product-content">
+            <img class="photo" src="assets/images/hamster.gif" alt="Brokenhearted hamster">
+            <h2 class="product-title">Brokenhearted hamster</h2>
+            <p class="product-price">$9.99</p>
+            <p class="product-availability">In stock</p>
+            <a href = "#" class="buy-button">Buy now</a>
+		  </div>
+        </li>
+		<li class="product-item">
+          <div class = "product-content">
+            <img class="photo" src="assets/images/mouse.gif" alt="Wiggling mouse">
+            <h2 class="product-title">Wiggling mouse</h2>
+            <p class="product-price">$39.99</p>
+            <p class="product-availability">Out of stock</p>
+            <a href = "#" class="buy-button-unavailable">Buy now</a>
+          </div>
+        </li>
+		<li class="product-item">
+           <div class = "product-content">
+            <img class="photo" src="assets/images/ryodan.gif" alt="Piggy ryodan">
+            <h2 class="product-title">Piggy ryodan</h2>
+            <p class="product-price">$29.99</p>
+            <p class="product-availability">In stock</p>
+            <a href = "#" class="buy-button">Buy now</a>
+          </div>
+        </li>
+		<li class="product-item">
+           <div class = "product-content">
+            <img class="photo" src="assets/images/ryodan.gif" alt="Piggy ryodan">
+            <h2 class="product-title">Piggy ryodan</h2>
+            <p class="product-price">$29.99</p>
+            <p class="product-availability">In stock</p>
+            <a href = "#" class="buy-button">Buy now</a>
+          </div>
+        </li>
+		<li class="product-item">
+           <div class = "product-content">
+            <img class="photo" src="assets/images/ryodan.gif" alt="Piggy ryodan">
+            <h2 class="product-title">Piggy ryodan</h2>
+            <p class="product-price">$29.99</p>
+            <p class="product-availability">In stock</p>
+            <a href = "#" class="buy-button">Buy now</a>
+          </div>
+        </li>
+		<li class="product-item">
+           <div class = "product-content">
+            <img class="photo" src="assets/images/ryodan.gif" alt="Piggy ryodan">
+            <h2 class="product-title">Piggy ryodan</h2>
+            <p class="product-price">$29.99</p>
+            <p class="product-availability">In stock</p>
+            <a href = "#" class="buy-button">Buy now</a>
+          </div>
+        </li>
+		<li class="product-item">
+           <div class = "product-content">
+            <img class="photo" src="assets/images/ryodan.gif" alt="Piggy ryodan">
+            <h2 class="product-title">Piggy ryodan</h2>
+            <p class="product-price">$29.99</p>
+            <p class="product-availability">In stock</p>
+            <a href = "#" class="buy-button">Buy now</a>
+          </div>
+        </li>
+		<li class="product-item">
+           <div class = "product-content">
+            <img class="photo" src="assets/images/ryodan.gif" alt="Piggy ryodan">
+            <h2 class="product-title">Piggy ryodan</h2>
+            <p class="product-price">$29.99</p>
+            <p class="product-availability">In stock</p>
+            <a href = "#" class="buy-button">Buy now</a>
+          </div>
+        </li>
+		<li class="product-item">
+           <div class = "product-content">
+            <img class="photo" src="assets/images/ryodan.gif" alt="Piggy ryodan">
+            <h2 class="product-title">Piggy ryodan</h2>
+            <p class="product-price">$29.99</p>
+            <p class="product-availability">In stock</p>
+            <a href = "#" class="buy-button">Buy now</a>
+          </div>
+        </li>
+		<li class="product-item">
+           <div class = "product-content">
+            <img class="photo" src="assets/images/ryodan.gif" alt="Piggy ryodan">
+            <h2 class="product-title">Piggy ryodan</h2>
+            <p class="product-price">$29.99</p>
+            <p class="product-availability">In stock</p>
+            <a href = "#" class="buy-button">Buy now</a>
+          </div>
+        </li>
+      </ul>
+	  <div class="pagination">
+	    <ul>
+          <li class="previous-page disabled"><a href="#">«</a></li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">9</a></li>
+          <li><a href="#">10</a></li>
+          <li class="next-page"><a href="#">»</a></li>
+        </ul>
+      </div>
+    </main>
+	</div>
+    <footer>
+      <p>Copyright: &copy; 2023 | <a href= "https://github.com/heartmxtion">heartmxtion</a> | All Rights Reserved</p>
+	  <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
+  </body>
+</html>

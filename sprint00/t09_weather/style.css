@@ -1,0 +1,42 @@
+h1 {
+	font-size: 32px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.day {
+	width: 200px;
+	height: 250px;
+	border: none;
+	margin: 10px;
+
+	float: left;
+    text-align: center;
+	
+
+}
+.day:hover {
+	box-shadow: 0 0 10px #000000;
+	border: 1px solid #ccc;
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.date {
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-bottom: 10px;
+	background-color: #008080;
+	color: white;
+}
+
+.temperature {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 2em;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}

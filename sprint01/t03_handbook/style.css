@@ -1,0 +1,213 @@
+/* Base Styles */
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	margin: 0;
+	font-weight: bold;
+
+}
+
+h2 {
+	margin: 0;
+	font-weight: bold;
+}
+
+h3{
+	margin: 0;
+	font-weight: bold;
+	text-align: center;
+}
+
+h4{
+	margin: 20px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 48px;
+	color: #0000CD;
+}
+
+a {
+	color: #007bff;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+p {
+	margin: 0;
+	line-height: 1.5;
+}
+table{
+	margin: 0 auto;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+	padding: 20px;
+}
+.grid-item {
+	background-color: #f5f5f5;
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 319px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+	.grid-container {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media (min-width: 1024px) {
+	.grid-container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.grid-item {
+		height: 400px;
+	}
+}
+/* Header */
+.header {
+	background-color: #007bff;
+	color: #fff;
+	text-align: center;
+	padding: 40px;
+}
+
+/* Contents */
+.contents {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f5f5f5;
+	padding: 40px;
+}
+.contents h2 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+.contents ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.contents li {
+	margin-bottom: 10px;
+}
+.contents a:hover {
+	color: #007bff;
+}
+
+/* HTML */
+.html {
+	background-color: #fff;
+	padding: 40px;
+	text-align: center;
+}
+.html h2 {
+	color: #007bff;
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+.html ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.html li {
+	margin-bottom: 20px;
+	text-align: left;
+}
+.html code {
+	background-color: #f5f5f5;
+	margin: 5px;
+	font-size: 1rem;
+
+}
+.html pre {
+	background-color: #f5f5f5;
+	padding: 20px;
+	overflow: auto;
+	text-align: left;
+}
+.html p{
+	margin: 5px;
+}
+
+.html form{
+	text-align: left;
+	padding-left: 10px;
+}
+
+.html textarea{
+	resize: none;
+}
+
+/* CSS */
+.css {
+	background-color: #fff;
+	padding: 40px;
+	text-align: center;
+}
+.css h2 {
+	color: #007bff;
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+.css ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.css li {
+	margin-bottom: 20px;
+	text-align: left;
+}
+.css code {
+	background-color: #f5f5f5;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+}
+/* Protocols */
+.protocols {
+	background-color: #fff;
+	padding: 40px;
+	text-align: center;
+}
+.protocols h2 {
+	color: #007bff;
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+.protocols ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.protocols li {
+	margin-bottom: 5px;
+	text-align: left;
+}
+.protocols p {
+	margin-bottom: 20px;
+	text-align: left;
+}
+.protocols code {
+	background-color: #f5f5f5;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+}
+footer {
+  background-color: #ccc;
+  padding: 20px;
+  text-align: center;
+}

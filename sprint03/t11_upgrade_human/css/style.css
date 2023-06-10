@@ -1,0 +1,38 @@
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#properties {
+  margin-left: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+button {
+  margin-top: 10px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+#messageContainer {
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  width: 450px;
+}
+
+#messageContainer p {
+  margin: 5px 0;
+}
+

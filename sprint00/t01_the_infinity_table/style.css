@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+}
+
+thead {
+  background-color: #282828;
+  color: #ffffff;
+}
+
+th {
+  border: none;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+td {
+  border: 1px solid #dddddd;
+  padding: 12px;
+  text-align: center;
+}
+
+img {
+  height: 120px;
+  width: 120px;
+  display: block;
+  border-radius: 25%;
+  margin: 0 auto;
+}
+
+tfoot td {
+  background-color: #ffffff;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+td {
+  font-weight: bold;
+}
+
+th:first-child {
+  font-weight: bold;
+}
+
+td:nth-child(3) {
+  text-align: left;
+}
+
+tr.space-stone {
+  background-color: rgb(2, 86, 145);
+  color: #000000;
+}
+
+tr.reality-stone {
+  background-color: rgb(193, 42, 46);
+  color: #000000;
+}
+
+tr.power-stone {
+  background-color: rgb(129, 117, 183);
+  color: #000000;
+}
+
+tr.mind-stone {
+  background-color: rgb(255, 255, 5);
+  color: #000000;
+}
+
+tr.time-stone {
+  background-color: rgb(0, 128, 1);
+  color: #000000;
+}
+
+tr.soul-stone {
+  background-color: rgb(214, 146, 61);
+  color: #000000;
+}
+
+tr.space-stone:before,
+tr.reality-stone:before,
+tr.power-stone:before,
+tr.mind-stone:before,
+tr.time-stone:before,
+tr.soul-stone:before {
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
