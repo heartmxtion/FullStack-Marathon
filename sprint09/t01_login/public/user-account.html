@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+                <h1>Login <span thjs:text="${roles}"></span></h1>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3>Hello <span thjs:text="${login}"></span></h3>
+                <form action="/exit" method="post">
+                    <button>Exit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

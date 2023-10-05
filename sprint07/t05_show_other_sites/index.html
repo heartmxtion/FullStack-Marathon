@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Show other sites</title>
+	<style>
+		p{
+			margin: 0;
+			padding: 0;
+			white-space: pre;
+		}
+	</style>
+</head>
+<body>
+    <h1>Show other sites</h1>
+    <form action="/">
+		<input type="text" name="url" placeholder="url" required>
+		<button>go</button>
+		<a href="#" onclick="goBack()">BACK</a>
+    </form>
+    <div>
+		<p thjs:text="${urlName}"></p>
+		<hr>
+		<span>&lt;body&gt</span>
+		<p thjs:text="${url}"></p>
+		<span>&lt;/body&gt</span>
+    </div>
+	<script>
+		function goBack() {
+			history.back();
+		}
+	</script>
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+{
+  "name": "t05_show_other_sites",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express-thymeleaf": "^0.3.0",
+    "got": "^13.0.0"
+  }
+}

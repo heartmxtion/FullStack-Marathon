@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Password Encryption Page</title>
+</head>
+<body>
+	<div class="container">
+		<h1>Password Encryption Page</h1>
+		<p id="dataStatus">Password not saved at session</p>
+		<div id="savingPass">
+			<label for="password">Password for saving to session:</label>
+			<input type="password" id="password">
+			<br>
+			<label for="salt">Salt for saving to session:</label>
+			<input type="text" id="salt">
+			<br>
+			<button onclick="saveData()">Save</button>
+		</div>
+		<div id="output"></div>
+		<div id="guessField" style="display:none;">
+			<label for="guess">Guess Password:</label>
+			<input type="password" id="guess">
+			<button onclick="checkPassword()">Submit Guess</button>
+			<br>
+			<button onclick="clearSession()">Clear</button>
+		</div>
+		<div id="result"></div>
+    </div>
+	<script src="utils.js"></script>
+</body>
+</html>

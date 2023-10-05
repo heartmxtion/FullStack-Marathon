@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+		<div>
+			<div>
+			<h1>Your email address</h1>
+			</div>
+		</div>
+		<div>
+			<div>
+				<form action="/push-message" method="post">
+					<div>
+						<input type="email"id="email" name="email" placeholder="Email" required>
+						<button>Enter</button>
+					</div>
+					<div thjs:class="${errorClass}" thjs:text="${errorMass}"></div>
+				</form>
+			</div>
+		</div>
+		<div>
+			<br>
+		</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.content
+		{
+		  	display: flex;
+		 	align-items: center;
+		}
+		.content div 
+		{
+		  	width: 50%;
+		}
+	</style>
+</head>
+<body>
+    <h1>Avenger Quote to XML</h1>
+    <div class="content">
+      	<div id="from"></div>
+      	<div id="to"></div>
+    </div>
+    <script>
+	window.onload = function () {
+		fetch('/XML').then((response) => response.json()).then((data) => {
+			document.getElementById('to').innerText = data.to;
+			document.getElementById('from').innerText = data.from;
+		});
+	};
+	</script>
+</body>
+</html>
+

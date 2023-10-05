@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="t08. A new set">
+	<title>A new set</title>
+</head>
+<body>
+	<h1>Avenger Form</h1>
+
+	<form action="/" method="POST">
+		<fieldset id="form">
+			<fieldset>
+				<legend>About candidate</legend><br>
+
+				<div class="input-group">
+					<span>Name</span>
+					<input type="text" name="name" placeholder="Tell your name" size="18" autofocus>
+				</div>
+
+				<div class="input-group">
+					<span>E-mail</span>
+					<input type="text" name="email" placeholder="Tell your e-mail" size="18">
+				</div>
+
+				<div class="input-group">
+					<span>Age</span>
+					<input type="number" name="age" min="1" max="999" step="1">
+				</div>
+
+				<div class="input-group">
+					<span>About</span>
+					<textarea name="description" id="about" cols="70" rows="5" maxlength="500" placeholder="Tell about yourself, max 500 symbols"></textarea>
+				</div>
+
+				<div class="input-group">
+					<span>Your photo:</span>
+					<input type="file" name="photo">
+				</div>
+
+				<p></p>
+			</fieldset>
+
+			<br>
+
+			<button type="reset">CLEAR</button>
+			<button type="submit">SEND</button>
+			<br><br>
+		</fieldset>
+	</form>
+</body>
+</html>

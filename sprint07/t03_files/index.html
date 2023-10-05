@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:thjs="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="t04. Files" charset="utf-8">
+	<title>Files</title>
+	<style>
+		.field {
+			border: 2px solid grey;
+			padding: 15px;
+		}
+	</style>
+</head>
+<body>
+	<h1>File manager</h1>
+	<p thjs:text="${errorMsg}" style="color: red"></p>
+
+	<form class="field" action="/create" method="post">
+		<h2>Create a file</h2>
+		<label for="fileName">Filename</label>
+		<input type="text" name="fileName" id="fileName"><br><br>
+		<label for="content">Content</label>
+		<textarea name="content" id="content" cols="50" rows="5"></textarea><br><br>
+		<button>Create file</button>
+	</form>
+
+	<div class="field">
+		<h2>Files:</h2>
+		<ul id="createdFiles"></ul>
+	</div>
+	<div class="field" id="selectedFile" style="display: none">
+		<h2>Selected file:</h2>
+		<h2 id="activeName"></h2>
+		<p>Content:</p>
+		<div id="activeContent"></div><br>
+		<form action="/delete" method="post">
+			<input type="text" name="deleteFile" id="deleteFile" style="display: none">
+			<input type="submit" value="Delete file">
+		</form>
+	</div>
+
+	<p id="getFiles" thjs:text="${files}" style="display: none"></p>
+
+</body>
+
+<script>
+	let files = JSON.parse(document.querySelector('#getFiles').innerHTML)
+	let parent = document.querySelector('#createdFiles')
+	files.forEach(file => {
+		parent.insertAdjacentHTML(
+			'beforeend',
+			`<li><a href="" onclick="renderFile(event)" content="${file.content}" class="link">${file.name}</a></li>`
+		)
+	})
+
+	function renderFile(event) {
+		event.preventDefault()
+		document.getElementById('selectedFile').style.display = 'block'
+		document.getElementById('activeName').innerText = event.target.textContent
+		document.getElementById('activeContent').innerText = event.target.getAttribute('content')
+
+		document.getElementById('deleteFile').value = event.target.textContent
+	}
+	document.querySelector('form').addEventListener('submit', function(event) {
+		const fileName = document.getElementById('fileName').value;
+		if (fileName.trim() === '') {
+			alert('File name cannot be empty!');
+			event.preventDefault();
+		}
+	});
+</script>
+</html>

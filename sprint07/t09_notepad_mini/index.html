@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Note App</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body style="margin-left: 40px;">
+
+	<h1>Notepad mini</h1>
+
+	<form id="noteForm" style="margin-top: 20px; margin-left: 30px;">
+		<input type="text" id="name" placeholder="Name" required><br>
+
+		<div style="margin-top: 20px;">
+			<select id="importance">
+				<option value="low">Low</option>
+				<option value="medium">Medium</option>
+				<option value="high">High</option>
+			</select><br>
+		</div>
+
+		<textarea id="content" placeholder="Text of note:" required style="margin-top: 20px;"></textarea><br>
+
+		<button type="submit" style="margin-top: 20px;">Create</button>
+	</form>
+
+	<h2 style="margin-top: 50px;">List of notes</h2>
+	<ul id="notes"></ul>
+
+	<div id="noteDetails" style="margin-top: 50px;"></div>
+
+	<script src="/script.js"></script>
+
+</body>
+
+</html>

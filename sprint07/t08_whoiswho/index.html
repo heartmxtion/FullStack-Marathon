@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Reader</title>
+</head>
+<body>
+    <h1>Parcing CSV data</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <span>Upload file: </span>
+        <input type="file" name="file" accept=".csv" />
+        <button type="submit">Upload</button>
+    </form>
+    <div class="filter-container">
+        <span>Filter: </span>
+        <select id="valueFilter"></select>
+        <button onclick="applyFilter()">Apply</button>
+        <button onclick="resetFilter()">Reset</button>
+    </div>
+    <table style="border: 3px solid black" id="data"></table>
+    <script src="script.js"></script>
+</body>
+</html>

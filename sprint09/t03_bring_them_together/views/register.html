@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Registration</title>
+</head>
+<body>
+    <div>
+		<div>
+				<h1>Registration</h1>
+		</div>
+		<div>
+			<div>
+				<form action="/register" method="post">
+					<div>
+						<label for="login">Login:</label>
+						<input type="text" id="login" name="login" placeholder="Login" required>
+						<div thjs:class="${errorL}" thjs:text="${errorLogin}"></div>
+					</div>
+					<div>
+						<form action="/register" method="post">
+							<div>
+								<label for="full_name" class="col-form-label">Full Name:</label>
+								<input type="text" id="full_name" name="full_name" placeholder="Full Name" required>
+							</div>
+							<div>
+								<label for="email">Email:</label>
+								<input type="email" id="email" name="email" placeholder="Email" required>
+								<div thjs:class="${errorE}" thjs:text="${errorEmail}"></div>
+							</div>
+							<div>
+								<label for="password">Password</label>
+								<input type="password" id="password" name="password" placeholder="Password" required>
+								<div thjs:class="${errorP}" thjs:text="${errorPass}"></div>
+							</div>
+							<div>
+								<label for="password_confirmation">Password confirmation</label>
+								<input type="password" id="password_confirmation" name="password_confirmation" placeholder="Password" required>
+								<div thjs:class="${errorP}" thjs:text="${errorPass}"></div>
+							</div>
+							<div>
+								<button type="submit">Submit</button>
+							</div>
+							<div thjs:class="${completeClass}" thjs:text="${completeMess}"></div>
+						</form>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

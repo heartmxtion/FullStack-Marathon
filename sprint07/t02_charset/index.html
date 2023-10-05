@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>String Conversion</title>
+</head>
+<body>
+	<h1>String Conversion</h1>
+
+	<label for="inputString">Input String:</label>
+	<input type="text" id="inputString"><br><br>
+
+	<label for="charset">Select Charset:</label>
+	<select id="charset" multiple name="selected">
+		<option selected value="UTF-8">UTF-8</option>
+		<option value="ISO-8859-1">ISO-8859-1</option>
+		<option value="Windows-1251">Windows-1251</option>
+	</select><br><br>
+
+	<button onclick="changeCharset()">Change Charset</button>
+	<button onclick="clearFields()">Clear</button><br><br>
+
+	<div id="output" style="display: none;">
+		<h2>Converted Strings:</h2>
+	</div>
+
+	<script src="utils.js"></script>
+</body>
+</html>

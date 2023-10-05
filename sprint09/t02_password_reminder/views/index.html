@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+		<div>
+			<div>
+				<h1>Authorization</h1>
+			</div>
+		</div>
+		<div>
+			<div>
+				<form action="/login" method="post">
+					<div>
+						<label for="login">Login</label>
+						<input type="text" id="login" name="login" placeholder="Login" required>
+						<div thjs:class="${errorL}" thjs:text="${errorLogin}"></div>
+					</div>
+					<div>
+						<label for="password">Password</label>
+						<input type="password" id="password" name="password" placeholder="Password" required>
+						<div thjs:class="${errorP}" thjs:text="${errorPass}"></div>
+					</div>
+					<div>
+						<button type="submit">Submit</button>
+						<a class="link-danger" href="http://localhost:3000/reminder-password">Reminder password</a>
+					</div>
+				</form>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

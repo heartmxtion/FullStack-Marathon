@@ -1,0 +1,22 @@
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#imageForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 15px;
+}
+
+#result {
+    margin-top: 45px;
+}

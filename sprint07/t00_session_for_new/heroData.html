@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A new set">
+	<title>A new set</title>
+</head>
+<body>
+	<h1>Hero Information</h1>
+
+	<div>
+		<p>Name: <span thjs:text="${heroData.name}"></span></p>
+		<p>Email: <span thjs:text="${heroData.email}"></span></p>
+		<p>Age: <span thjs:text="${heroData.age}"></span></p>
+		<p>Description: <span thjs:text="${heroData.description}"></span></p>
+		<p>Photo: <span thjs:text="${heroData.photo}"></span></p>
+	</div>
+
+	<form action="/clear" method="post">
+		<button type="submit">FORGET</button>
+	</form>
+</body>
+</html>
